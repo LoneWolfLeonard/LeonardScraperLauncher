@@ -45,7 +45,7 @@ public class LeonardScraperLauncher {
                 InputStream err = proc.getErrorStream();     
                 
                 //Give it time to run
-                TimeUnit.SECONDS.sleep(120);                 
+                TimeUnit.SECONDS.sleep(30);                 
                     
                 //Move Number Matching URL name from URLHolder Array To Manipulator                       
                Manipulator = URLHolderArrayL[counteroftheloop];
@@ -64,7 +64,7 @@ public class LeonardScraperLauncher {
                    //Reset UrlLoader.txt for next use
                    FileWriter fw3 = new FileWriter(UrlLoaderFile);
                    PrintWriter out3 = new PrintWriter(fw3);     
-                   out3.print("http://www.pcs-company.com/viewproduct/mold-components/mold-date-(amp)-recycling-inserts/pcs-cumsa%E2%84%A2-date-stamps/date-stamp-plus/mold-components/part-ejection/ejector-pins/PEH");
+                   out3.print("https://www.pcs-company.com/hardened-throughout-step-pins");
                     out3.flush(); 
                      out3.close(); 
                      fw3.close();                
