@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class LeonardScraperLauncher {
     public static void main(String[] args) throws IOException, InterruptedException, InterruptedException {
        int counteroftheloop  = 0;
-       int loopcap = 15;
+       int loopcap = 17;
        int subloopcount = 0;
        String[] URLHolderArrayL = new String[22]; 
        File file3 = new File("C:\\Users\\tremanleo\\Documents\\NetBeansProjects\\LeonardScraperLauncher\\CombineUS\\urlstoscrape.txt");  
@@ -24,7 +24,7 @@ public class LeonardScraperLauncher {
 	String line3;
 	while ((line3 = br3.readLine()) != null) 
             {          
-            if(subloopcount == 15)
+            if(subloopcount == 17)
             {
                 subloopcount = 0;                
             }
