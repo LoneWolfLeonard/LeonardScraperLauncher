@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class LeonardScraperLauncher {
     public static void main(String[] args) throws IOException, InterruptedException, InterruptedException {
        int counteroftheloop  = 0;
-       int loopcap = 22;
+       int loopcap = 15;
        int subloopcount = 0;
        String[] URLHolderArrayL = new String[22]; 
        File file3 = new File("C:\\Users\\tremanleo\\Documents\\NetBeansProjects\\LeonardScraperLauncher\\CombineUS\\urlstoscrape.txt");  
@@ -24,7 +24,7 @@ public class LeonardScraperLauncher {
 	String line3;
 	while ((line3 = br3.readLine()) != null) 
             {          
-            if(subloopcount == 22)
+            if(subloopcount == 15)
             {
                 subloopcount = 0;                
             }
@@ -45,7 +45,7 @@ public class LeonardScraperLauncher {
                 InputStream err = proc.getErrorStream();     
                 
                 //Give it time to run
-                TimeUnit.SECONDS.sleep(30);                 
+                TimeUnit.SECONDS.sleep(15);                 
                     
                 //Move Number Matching URL name from URLHolder Array To Manipulator                       
                Manipulator = URLHolderArrayL[counteroftheloop];
